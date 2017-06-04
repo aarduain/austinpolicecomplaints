@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { HomePage } from "../home/home";
+import { UserinfoPage } from "../userinfo/userinfo";
 /**
  * Generated class for the RelationshipPage page.
  *
@@ -24,15 +24,14 @@ export class RelationshipPage {
   }
 
   submitPage(item) {
-    this.navCtrl.push(HomePage, {
-      items: this.items
+    this.navCtrl.push(UserinfoPage, {
+      item: this.items
     });
     // get to the next page with the selection
   }
 
   itemSelected(event) {
     this.items = event;
-    alert(event);
   }
 
 }
