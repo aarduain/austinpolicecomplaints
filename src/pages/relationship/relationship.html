@@ -1,0 +1,28 @@
+<!--
+  Generated template for the RelationshipPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Incident Relationship</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <ion-label>Relationship to The Incident</ion-label>
+  <ion-item class="incident-rel">
+    <ion-select [(ngModel)]="ion-select" placeholder="Choose One" (ionChange)="itemSelected($event)" #relation>
+      <ion-option value="witness">Witness</ion-option>
+      <ion-option value="third-party">Third Party</ion-option>
+      <ion-option value="subject">Subject</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<button ion-button class="next-button" (click)="submitPage(item)">Next</button>
+</ion-content>
