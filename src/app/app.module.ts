@@ -8,13 +8,17 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { GoToFormsPage } from '../pages/go-to-forms/go-to-forms';
 import { TabsPage } from '../pages/tabs/tabs';
+import { RelationshipPage } from '../pages/relationship/relationship';
+import { UserinfoPage } from '../pages/userinfo/userinfo';
 
 @NgModule({
   declarations: [
     MyApp,
     GoToFormsPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    RelationshipPage,
+    UserinfoPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,9 @@ import { TabsPage } from '../pages/tabs/tabs';
     MyApp,
     GoToFormsPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    RelationshipPage,
+    UserinfoPage
   ],
   providers: [
     StatusBar,
